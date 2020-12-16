@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Alquiler Temporario</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="home--header">
+    <nav aria-label="main navigation" class="navbar is-primary" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item is-size-3 has-text-weight-bold" href="home.html"> ALQUILERES </a>
+            <a aria-expanded="false"
+               aria-label="menu"
+               class="navbar-burger burger"
+               data-target="navbarBasicExample"
+               role="button"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark" id="registrarse">
+                            <strong>Registrate</strong>
+                        </a>
+                        <a class="button is-dark" id="ingresar">
+                            <strong>Iniciar Sesion</strong>
+                        </a>
+                        <a class="button is-dark" id="cerrar-sesion">
+                            <strong>Cerrar Sesion</strong>
+                        </a>
+                        <a class="button is-light"> Mis alojamientos </a>
+                        <a class="button is-light"> Ayuda </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="section">
+            <div class="container">
+                <label class="label"> Lugar </label>
+                <div class="is-flex is-flex-direction-row is-flex-wrap is-fullwidth">
+                    <div class="field has-addons is-fullwidth is-flex-grow-1 mb-4">
+                        <div class="control is-flex-grow-1">
+                            <input type="text" class="input" placeholder="Buenos aires" id="buscar-text"/>
+                        </div>
+                        <div class="control">
+                            <button href="buscar.html" class="button is-success" id="buscar-btn">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                        class="is-flex is-flex-direction-row is-justify-content-center is-align-content-space-evenly"
+                >
+                    <div class="field mx-3">
+                        <label class="label">Check-in</label>
+                        <div class="control is-flex-grow-1" id="check-in--parent">
+                            <input id="check-in" class="input" type="date"/>
+                        </div>
+                    </div>
+                    <div class="field mx-3">
+                        <label class="label">Check-out</label>
+                        <div class="control is-flex-grow-1" id="check-out--parent">
+                            <input id="check-out" class="input" type="date"/>
+                        </div>
+                    </div>
+                    <div class="field mx-3">
+                        <label class="label">Huespedes</label>
+                        <div class="control is-flex-grow-0 is-flex-shrink-2">
+                            <input class="input" placeholder="1" type="number" min="1"/>
+                        </div>
+                    </div>
+                    <div class="field mx-3">
+                        <label class="label">Dormitorios</label>
+                        <div class="control is-flex-grow-0 is-flex-shrink-2">
+                            <input class="input" placeholder="1" type="number" min="1"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"><!-- principal-->
+                <div class="row mx-md-n5 ">
+                    <div class="col px-md-5">
+                        <div class="p-4 border bg-light justify-content-center font-weight-bolder text-uppercase">Precio
+                            x noche
+                        </div>
+                        <div class="px-5  py-xl-5 border bg-light justify-content-center">
+                            <div class="d-flex justify-content-around align-content-center align-items-center my-4">
+                                <div class=" mr-2 mt-1">
+                                    <span class="font-weight-bold indigo-text">100$</span>
+                                </div>
+                                <div class="w-75">
+                                    <input class="border-0 form-control-range" type="range" min="0" max="100"/>
+                                </div>
+                                <div class="ml-2 mt-1">
+                                    <span class="font-weight-bold indigo-text ">1000$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"><!-- principal-->
+
+                <div class="carousel slide row  h-100" id="carousel-501210">
+                    <div class="col  h-100">
+                        <ol class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#carousel-501210" class="active">
+                            </li>
+                            <li data-slide-to="1" data-target="#carousel-501210">
+                            </li>
+                            <li data-slide-to="2" data-target="#carousel-501210">
+                            </li>
+                        </ol>
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item h-100 carousel-item-next carousel-item-left">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap First" src="img/ima1.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap Second" src="img/ima2.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100 active carousel-item-left">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap Third" src="img/ima3.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-501210" data-slide="prev"><span
+                                class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a
+                            class="carousel-control-next" href="#carousel-501210" data-slide="next"><span
+                            class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3"><!-- principal-->
+                <div class="row ">
+                    <div class="col ">
+                        <div class="card bg-light mb-3 resumen" style="max-width: 40rem;">
+                            <div class="card-header font-weight-bold">Calle XXXX</div>
+                            <div class="card-body">
+                                <div class="p-3 bg-light justify-content-center font-weight-bold">Localidad</div>
+                                <div class="p-2 bg-light justify-content-center font-weight-bold">
+                                    <!--                            <p> 5 Pers. -2 Dor. -2 baños</p>-->
+                                    <div>
+                                        <ul>
+                                            <li><span class="font-weight-bold">Capacidad: </span>5 Pers.</li>
+                                            <li><span class="font-weight-bold">Dormitorios: </span> 2</li>
+                                            <li><span class="font-weight-bold">Baños: </span>2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn btn-primary my-2" href="elegir.html">Ver oferta »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"><br></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><br></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 my-lg-n4 h-100"><!-- principal-->
+                <div class="row mx-md-n5 h-100">
+                    <div class="col px-md-5">
+                        <div class="p-4 border bg-light justify-content-center font-weight-bold text-uppercase">
+                            Caracteristicas
+                        </div>
+                        <div class="p-1 border bg-light justify-content-center "><span
+                                class="font-weight-bold indigo-text ml-6 mt-3 ">Accesibilidad</span></div>
+                        <div class="py-lg-5 border bg-light h-50  d-flex flex-column justify-content-start align-items-start">
+                            <div class="mx-lg-5 p-1">
+                                <label class="font-weight-bold indigo-text ml-2 mt-1">Mascotas</label>
+                                <input class="font-weight-bold indigo-text ml-2 mt-2" type="checkbox"
+                                       id="exampleCheck1">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"><!-- principal-->
+
+                <div class="carousel slide row  h-100" id="carousel-501210">
+                    <div class="col  h-100">
+                        <ol class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#carousel-501210" class="active">
+                            </li>
+                            <li data-slide-to="1" data-target="#carousel-501210">
+                            </li>
+                            <li data-slide-to="2" data-target="#carousel-501210">
+                            </li>
+                        </ol>
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item h-100 carousel-item-next carousel-item-left">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap First" src="img/ima1.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap Second" src="img/ima2.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100 active carousel-item-left">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap Third" src="img/ima3.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-501210" data-slide="prev"><span
+                                class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a
+                            class="carousel-control-next" href="#carousel-501210" data-slide="next"><span
+                            class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3"><!-- principal-->
+                <div class="row ">
+                    <div class="col ">
+                        <div class="card bg-light mb-3 resumen" style="max-width: 40rem;">
+                            <div class="card-header font-weight-bold">Calle XXXX</div>
+                            <div class="card-body">
+                                <div class="p-3 bg-light justify-content-center font-weight-bold">Localidad</div>
+                                <div class="p-2 bg-light justify-content-center font-weight-bold">
+                                    <!--                            <p> 5 Pers. -2 Dor. -2 baños</p>-->
+                                    <div>
+                                        <ul>
+                                            <li><span class="font-weight-bold">Capacidad: </span>5 Pers.</li>
+                                            <li><span class="font-weight-bold">Dormitorios: </span> 2</li>
+                                            <li><span class="font-weight-bold">Baños: </span>2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn btn-primary my-2" href="elegir.html">Ver oferta »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"><br></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"><br></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 my-lg-n4 h-100"><!-- principal-->
+                <div class="row mx-md-n5 h-100">
+                    <div class="col px-md-5">
+                        <div class="p-4 border bg-light justify-content-center font-weight-bold text-uppercase">
+                            Servicio de
+                            Dormitorio
+                        </div>
+                        <div class="border bg-light justify-content-center">
+                            <div class="d-flex flex-column justify-content-start align-items-start  my-4">
+                                <div class="mx-lg-5 ">
+                                    <label class="font-weight-bold indigo-text ml-1 mt-1">Cama doble</label>
+                                    <input class="font-weight-bold indigo-text ml-4 mt-2" type="checkbox">
+                                </div>
+                                <div class="mx-lg-5">
+                                    <label class="font-weight-bold indigo-text ml-1 mt-1">Cama simple</label>
+                                    <input class="font-weight-bold indigo-text ml-2 mt-2" type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"><!-- principal-->
+
+                <div class="carousel slide row  h-100" id="carousel-501210">
+                    <div class="col  h-100">
+                        <ol class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#carousel-501210" class="active">
+                            </li>
+                            <li data-slide-to="1" data-target="#carousel-501210">
+                            </li>
+                            <li data-slide-to="2" data-target="#carousel-501210">
+                            </li>
+                        </ol>
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item h-100 carousel-item-next carousel-item-left">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap First" src="img/ima1.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap Second"
+                                     src="img/ima2.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100 active carousel-item-left">
+                                <img class="d-block w-100 h-100" alt="Carousel Bootstrap Third" src="img/ima3.png"/>
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-501210" data-slide="prev"><span
+                                class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a>
+                        <a
+                                class="carousel-control-next" href="#carousel-501210" data-slide="next"><span
+                                class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3"><!-- principal-->
+                <div class="row ">
+                    <div class="col ">
+                        <div class="card bg-light mb-3 resumen" style="max-width: 40rem;">
+                            <div class="card-header font-weight-bold">Calle XXXX</div>
+                            <div class="card-body">
+                                <div class="p-3 bg-light justify-content-center font-weight-bold">Localidad</div>
+                                <div class="p-2 bg-light justify-content-center font-weight-bold">
+                                    <!--                            <p> 5 Pers. -2 Dor. -2 baños</p>-->
+                                    <div>
+                                        <ul>
+                                            <li><span class="font-weight-bold">Capacidad: </span>5 Pers.</li>
+                                            <li><span class="font-weight-bold">Dormitorios: </span> 2</li>
+                                            <li><span class="font-weight-bold">Baños: </span>2</li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn btn-primary my-2" href="elegir.html">Ver oferta »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center my-5">
+            <div class="col-lg-7"></div>
+            <div class="col-lg-5"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal" id="registracion-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Registrate</p>
+                    <button aria-label="close" class="delete" id="close-registrarse-header"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="container">
+                        <form name="registration-form">
+                            <div class="field">
+                                <label class="label">Nombre</label>
+                                <div class="control" id="nombre--parent">
+                                    <input id="nombre"
+                                           name="nombre"
+                                           class="input is-rounded"
+                                           type="text"
+                                    />
+                                </div>
+                                <div class=""></div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Apellido</label>
+                                <div class="control" id="apellido--parent">
+                                    <input id="apellido"
+                                           class="input is-rounded"
+                                           type="text"
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Fecha de Nacimiento</label>
+                                <div class="control">
+                                    <input
+
+                                            class="input is-rounded"
+                                            type="date"
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Correo Electronico</label>
+                                <div class="control" id="email--parent">
+                                    <input
+                                            id="email"
+                                            class="input is-rounded"
+                                            type="email"
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Contrasena</label>
+                                <div class="control is-centered" id="password--parent">
+                                    <input
+                                            id="password"
+                                            class="input is-rounded"
+                                            type="password"
+                                    />
+                                </div>
+                            </div>
+                            <div class="field" id="terminos--parent">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="terminos"/>
+                                    Para registrarse debe aceptar los<a href="#">
+                                    términos de uso y las políticas de privacidad
+                                </a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success is-rounded" id="confirmar-registracion">
+                        Registrarse
+                    </button>
+                    <button class="button is-rounded" id="cancelar-registarse">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal" id="ingresar-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Ingrese</p>
+                    <button aria-label="close" class="delete" id="cerrar-ingresar"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="container">
+                        <form>
+                            <div class="field">
+                                <label class="label">Correo Electronico</label>
+                                <div class="control" id="email--ingreso--parent">
+                                    <input
+                                            id="email--ingreso"
+                                            class="input is-rounded"
+                                            type="email"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label class="label">Contrasena</label>
+                                    <div class="control is-centered" id="password--ingreso--parent">
+                                        <input
+                                                id="password--ingreso"
+                                                class="input is-rounded"
+                                                type="password"
+                                        />
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success is-rounded" id="confirmar-ingreso">
+                        Ingresar
+                    </button>
+                    <button class="button is-rounded" id="cancelar-ingresar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<div id="capaFondo"></div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="modules/home.js"></script>
+</body>
+
+</html>

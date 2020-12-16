@@ -1,0 +1,166 @@
+
+.home--header {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+
+}
+
+/*grid que contiene el containerResumen, metodo-de-pago,  sectio3*/
+
+.container0 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: stretch;
+    grid-gap: 50px;
+    padding: 50px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.containerResumen {
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.metodo-de-pago {
+    grid-column: 3;
+    grid-row: 1/4;
+}
+
+
+.section3 {
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+
+    grid-gap: 10px;
+    padding: 3px;
+
+    grid-column: 1/4;
+    grid-row: 4;
+
+}
+
+/*estilos de tarjetas y botones*/
+
+.tarjeta, .caracteristica, .card {
+    border: 1px solid #dadfe4;
+    border-radius: 13px;
+
+    margin: 4px;
+}
+
+.tarjetaboton {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*width: 730px;*/
+    /*height: 120px;*/
+}
+
+
+.forma-de-pago, .tarjeta {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    height: 90px;
+}
+
+.nuevatarjeta {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+
+.resumen {
+    margin: 0;
+}
+
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+.section {
+    padding-bottom: 250px;
+}
+
+
+.mapa {
+    padding: 10px;
+
+}
+
+.card-header {
+    background: #00D1B2;
+    color: white;
+}
+
+/*radio button*/
+
+.funkyradio div {
+    clear: both;
+    overflow: hidden;
+}
+
+
+/*input[type="radio"] {*/
+/*    !*position: relative;*!*/
+/*    line-height: 2.5em;*/
+/*    text-indent: 3.25em;*/
+/*    position: absolute;*/
+/*    right: 45px;*/
+/*    bottom: 45%;*/
+/*    cursor: pointer;*/
+
+/*}*/
+
+
+.precio {
+    /*display: inline;*/
+    /*position: absolute;*/
+    /*font-weight: bolder;*/
+    /*left: 85%;*/
+}
+
+/*corrección por problema entre versiones bootstrap*/
+
+.modal-backdrop {
+    display: none;
+}
+
+#capaFondo {
+    visibility: hidden;
+    position: absolute;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #1b1d1d1c;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    z-index: 0;
+}
+
+.precio__radio {
+    margin-left: 1rem;
+}
+
+.medio-de-pago--nueva {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important;
+}

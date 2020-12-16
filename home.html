@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Alquiler Temporario</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <script src="gulpfile.js"></script>
+</head>
+
+<body>
+<header class="home--header">
+    <nav aria-label="main navigation" class="navbar is-primary" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item is-size-3 has-text-weight-bold"href="home.html"> ALQUILERES </a>
+            <a aria-expanded="false"
+               aria-label="menu"
+               class="navbar-burger burger"
+               data-target="navbarBasicExample"
+               role="button"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark" id="registrarse">
+                            <strong>Registrate</strong>
+                        </a>
+                        <a class="button is-dark" id="ingresar">
+                            <strong>Iniciar Sesion</strong>
+                        </a>
+                        <a class="button is-dark" id="cerrar-sesion">
+                        <strong>Cerrar Sesion</strong>
+                        </a>
+                        <a class="button is-light"> Mis alojamientos </a>
+                        <a class="button is-light"> Ayuda </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="section">
+            <div class="container">
+                <label class="label"> Lugar </label>
+                <div class="is-flex is-flex-direction-row is-flex-wrap is-fullwidth">
+                    <div class="field has-addons is-fullwidth is-flex-grow-1 mb-4">
+                        <div class="control is-flex-grow-1">
+                            <input type="text" class="input" placeholder="Buenos aires" id="buscar-text" />
+                        </div>
+                        <div class="control">
+                            <button href="buscar.html" class="button is-success" id="buscar-btn">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                        class="is-flex is-flex-direction-row is-justify-content-center is-align-content-space-evenly"
+                >
+                    <div class="field mx-3">
+                        <label class="label">Check-in</label>
+                        <div class="control is-flex-grow-1" id="check-in--parent">
+                            <input id="check-in" class="input" type="date" />
+                        </div>
+                    </div>
+                    <div class="field mx-3">
+                        <label class="label">Check-out</label>
+                        <div class="control is-flex-grow-1"  id="check-out--parent">
+                            <input id="check-out" class="input" type="date" />
+                        </div>
+                    </div>
+                    <div class="field mx-3">
+                        <label class="label">Huespedes</label>
+                        <div class="control is-flex-grow-0 is-flex-shrink-2">
+                            <input class="input" placeholder="1" type="number" min="1" />
+                        </div>
+                    </div>
+                    <div class="field mx-3">
+                        <label class="label">Dormitorios</label>
+                        <div class="control is-flex-grow-0 is-flex-shrink-2">
+                            <input class="input" placeholder="1" type="number"  min="1"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+
+  <div class="container">
+    <div class="modal" id="registracion-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Registrate</p>
+          <button aria-label="close" class="delete" id="close-registrarse-header"></button>
+        </header>
+        <section class="modal-card-body">
+          <div  class="container">
+            <form name="registration-form">
+              <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control" id="nombre--parent">
+                  <input id="nombre"
+                         name="nombre"
+                          class="input is-rounded"
+                          type="text"
+                  />
+                </div>
+                  <div class=""></div>
+              </div>
+              <div class="field">
+                <label class="label">Apellido</label>
+                <div class="control" id="apellido--parent">
+                  <input id="apellido"
+                          class="input is-rounded"
+                          type="text"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Fecha de Nacimiento</label>
+                <div class="control" >
+                  <input
+
+                          class="input is-rounded"
+                          type="date"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Correo Electronico</label>
+                <div class="control" id="email--parent">
+                  <input
+                          id="email"
+                          class="input is-rounded"
+                          type="email"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Contrasena</label>
+                <div class="control is-centered" id="password--parent">
+                  <input
+                          id="password"
+                          class="input is-rounded"
+                          type="password"
+                  />
+                </div>
+              </div>
+              <div class="field" id="terminos--parent" >
+                <label class="checkbox">
+                  <input type="checkbox" id="terminos"/>
+                  Para registrarse debe aceptar los<a href="#">
+                  términos de uso y las políticas de privacidad
+                </a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button  class="button is-success is-rounded" id="confirmar-registracion">
+            Registrarse
+          </button>
+          <button class="button is-rounded" id="cancelar-registarse">Cancelar</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="modal" id="ingresar-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Ingrese</p>
+          <button aria-label="close" class="delete" id="cerrar-ingresar"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="container">
+            <form>
+              <div class="field">
+                <label class="label">Correo Electronico</label>
+                <div class="control" id="email--ingreso--parent">
+                  <input
+                          id="email--ingreso"
+                          class="input is-rounded"
+                          type="email"
+                  />
+                </div>
+              <div class="field">
+                <label class="label">Contrasena</label>
+                <div class="control is-centered" id="password--ingreso--parent">
+                  <input
+                          id="password--ingreso"
+                          class="input is-rounded"
+                          type="password"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success is-rounded" id="confirmar-ingreso">
+            Ingresar
+          </button>
+          <button class="button is-rounded" id="cancelar-ingresar">Cancelar</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+<!-- Page Content -->
+
+    <main class="hero is-dark is-medium">
+        
+              <img src="img/plyaBrasil.jpg" usemap="playa">
+          
+    </main>
+
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="modules/home.js"></script>
+</body>
+
+</html>
