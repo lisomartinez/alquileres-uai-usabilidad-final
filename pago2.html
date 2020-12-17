@@ -23,7 +23,7 @@
     <header class="home--header">
         <nav aria-label="main navigation" class="navbar is-primary" role="navigation">
             <div class="navbar-brand">
-                <a class="navbar-item is-size-3 has-text-weight-bold"href="home.html"> ALQUILERES </a>
+                <a class="navbar-item is-size-3 has-text-weight-bold" href="home.html"> ALQUILERES </a>
                 <a aria-expanded="false"
                    aria-label="menu"
                    class="navbar-burger burger"
@@ -56,6 +56,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
     <div class="container0">
         <div class="containerResumen">
@@ -242,6 +243,131 @@
     </div>
 </section>
 
+<div class="container">
+    <div class="modal" id="registracion-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Registrate</p>
+                <button aria-label="close" class="delete" id="close-registrarse-header"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="container">
+                    <div class="mb-2">Para realizar la búsqueda no hace falta estar registrado</div>
+                    <form name="registration-form">
+                        <div class="field">
+                            <label class="label">Nombre</label>
+                            <div class="control" id="nombre--parent">
+                                <input id="nombre"
+                                       name="nombre"
+                                       class="input is-rounded"
+                                       type="text"
+                                />
+                            </div>
+                            <div class=""></div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Apellido</label>
+                            <div class="control" id="apellido--parent">
+                                <input id="apellido"
+                                       class="input is-rounded"
+                                       type="text"
+                                />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Fecha de Nacimiento</label>
+                            <div class="control">
+                                <input
+
+                                        class="input is-rounded"
+                                        type="date"
+                                />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Correo Electronico</label>
+                            <div class="control" id="email--parent">
+                                <input
+                                        id="email"
+                                        class="input is-rounded"
+                                        type="email"
+                                />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Contrasena</label>
+                            <div class="control is-centered" id="password--parent">
+                                <input
+                                        id="password"
+                                        class="input is-rounded"
+                                        type="password"
+                                />
+                            </div>
+                        </div>
+                        <div class="field" id="terminos--parent">
+                            <label class="checkbox">
+                                <input type="checkbox" id="terminos"/>
+                                Para registrarse debe aceptar los<a href="#">
+                                términos de uso y las políticas de privacidad
+                            </a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success is-rounded" id="confirmar-registracion">
+                    Registrarse
+                </button>
+                <button class="button is-rounded" id="cancelar-registarse">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="modal" id="ingresar-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Ingrese</p>
+                <button aria-label="close" class="delete" id="cerrar-ingresar"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="container">
+                    <form>
+                        <div class="field">
+                            <label class="label">Correo Electronico</label>
+                            <div class="control" id="email--ingreso--parent">
+                                <input
+                                        id="email--ingreso"
+                                        class="input is-rounded"
+                                        type="email"
+                                />
+                            </div>
+                            <div class="field">
+                                <label class="label">Contrasena</label>
+                                <div class="control is-centered" id="password--ingreso--parent">
+                                    <input
+                                            id="password--ingreso"
+                                            class="input is-rounded"
+                                            type="password"
+                                    />
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success is-rounded" id="confirmar-ingreso">
+                    Ingresar
+                </button>
+                <button class="button is-rounded" id="cancelar-ingresar">Cancelar</button>
+            </footer>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <div class="clearfix"></div>

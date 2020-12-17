@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb9b14d-056a-45a2-bcbf-950942ff8283" name="Default Changelist" comment="release candidate">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscar.html" beforeDir="false" afterPath="$PROJECT_DIR$/buscar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elegir.html" beforeDir="false" afterPath="$PROJECT_DIR$/elegir.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pago.html" beforeDir="false" afterPath="$PROJECT_DIR$/pago.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pago2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pago2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +42,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.14.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.14" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/css/pago.css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -95,6 +101,7 @@
       <workItem from="1607782024558" duration="26000" />
       <workItem from="1608128280687" duration="5232000" />
       <workItem from="1608138248259" duration="630000" />
+      <workItem from="1608245411631" duration="1522000" />
     </task>
     <task id="LOCAL-00001" summary="release candidate">
       <created>1608138116657</created>

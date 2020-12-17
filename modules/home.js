@@ -577,7 +577,7 @@ function isDateBeforeToday(dateField) {
 function dateIsBeforeToday(child, text) {
   const field = getParent(child)
   const error = createError()
-  error.innerText = `la fecha de ${text} no puede ser hoy`
+  error.innerText = `la fecha de ${text} debe estar en el futuro`
   error.id = `${child}--before`
   field.append(error)
 }
@@ -644,17 +644,21 @@ document.addEventListener("DOMContentLoaded", evt => {
   enableAdminButtonsOnLoggedUser()
 
   //buscador
-  setDatesMinToToday()
+  if (!!getCheckIn()) {
+    console.log(!!getCheckIn())
+    setDatesMinToToday()
+    getCheckIn().addEventListener('change', validateCheckIn)
+    getCheckIn().addEventListener('blur', validateCheckIn)
+    getCheckOut().addEventListener('change', validateCheckOut)
+    getCheckOut().addEventListener('blur', validateCheckOut)
+    enableButtonIfTextPresent()
+    getBuscarTexto().addEventListener('keyup', enableButtonIfTextPresent)
+    getBuscarTexto().addEventListener('change', enableButtonIfTextPresent)
+    getBuscarButton().addEventListener('click', goToBuscar)
+  }
 
-  getCheckIn().addEventListener('change', validateCheckIn)
-  getCheckIn().addEventListener('blur', validateCheckIn)
 
-  getCheckOut().addEventListener('change', validateCheckOut)
-  getCheckOut().addEventListener('blur', validateCheckOut)
-  enableButtonIfTextPresent()
-  getBuscarTexto().addEventListener('keyup', enableButtonIfTextPresent)
-  getBuscarTexto().addEventListener('change', enableButtonIfTextPresent)
-  getBuscarButton().addEventListener('click', goToBuscar)
+
   //ingreso
   getIngresar().addEventListener('click', ingresar)
   getConfirmarIngreso().addEventListener('click', confirmarIngreso)
